@@ -12,9 +12,9 @@ import smbus
 
 class Adafruit_I2C :
 
-  def __init__(self, address, busnum=-1, debug=False):
+  def __init__(self, address, busnum=2, debug=False):
     self.address = address
-    self.bus = smbus.SMBus(busnum if busnum >= 0 else 1)
+    self.bus = smbus.SMBus(busnum)
     self.debug = debug
 
   def reverseByteOrder(self, data):
