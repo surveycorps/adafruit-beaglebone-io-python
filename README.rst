@@ -1,3 +1,14 @@
+These changes have been tested on kernel version 3.14.33-ti-r51 with ubuntu 14.04
+It assumes we are using a static device tree that is configured for using:
+   I2C2 pins P9_19 P9_20 
+   SPI0 pins P9_17 P9_18 P9_21 P9_22
+
+The device tree we are using is provided in the dtb folder
+
+**Tested**
+I2C
+SPI
+
 **PLEASE NOTE:  This library may have breaking changes as development continues.  Please read the changelog anytime you update the library!**
 
 **The PWM Duty Cycle range was reversed in 0.0.15 from 100(off)-0(on) to 0(off)-100(on).  Please update your code accordingly.**
